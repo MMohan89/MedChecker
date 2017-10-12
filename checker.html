@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Meds App</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+</head>
+
+<body>
+    <div class="containder">
+        <div class="row pr-2">
+            <div class="col-md-4"></div>
+            <div class="col-md-4 text-center mt-2 mb-2">
+                <img src="assets/images/LOGO/LOGO3.png" alt="not found" id='imgHeading' class='mx-2'>
+                <span id='title'>Med-Checkr</span>
+            </div>
+            <div class="col-md-4 text-right">
+                <a href="login.html" class='cntrVert' id='logInOut'>Login</a>
+            </div> 
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center" id='navBg'>
+                <nav class="d-flex justify-content-center">
+                    <ul class="nav mx-1">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="locator.html">Locator</a>
+                        </li>
+                        <li class="nav-item">
+                            <span class="nav-link">|</span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://www.webmd.com" target="_blank">WebMD</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://www.mayoclinic.com" target="_blank">MayoClinic</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://www.healthline.com" target="_blank">Healthline</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+
+        <div class="row mt-2">
+            <div class="col-md-3">
+                <div id="medsAddDiv"></div>                
+                <div class="col-md-12">
+                    <div class="card mt-3">
+                        <div class="bg-primary rounded">
+                            <img class="card-img-top bg-primary ml-2 my-1" src="assets/images/ico3.png" alt="Card image cap" id="icon2">
+                            <span class="font-weight-bold text-white">Medication List</span>
+                        </div>
+                        <div class="card-block p-2" id="resultsMedsList"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <input type="text" class="form-control mt-3" id="searchTerm" placeholder="Search for Meds">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <button type="button" class="btn btn-primary mt-3" id='searchBtn'>
+                        <img src="assets/images/ico1.png" alt="not found" id='iconOne'>Search</button>
+                        <button type="button" class="btn btn-primary mt-3" id='clrBtn'>
+                            <img src="assets/images/clr.png" alt="not found" id='iconOne'>Clear</button>                            
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="bg-primary rounded">
+                                <img class="card-img-top bg-primary ml-2 my-1" src="assets/images/ico4.png" alt="Card image cap" id="icon2">
+                                <span class="font-weight-bold text-white">Search Results</span>
+                            </div>
+                            <div class="card-block p-2" id="resultsDiv"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="assets/images/chkr.jpg" alt="not found"  class='mb-2 imgSide'>
+                        <img src="assets/images/peace.jpeg" alt="not found" class='mb-2 imgSide'>
+                        <img src="assets/images/presc.jpg" alt="not found" class='imgSide'>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>  
+    <script src="https://cdn.firebase.com/libs/firebaseui/2.4.0/firebaseui.js"></script> 
+    <script src="assets/script/defiant.js"></script>
+    <script src="assets/script/script.js"></script>
+</body>
+
+</html>

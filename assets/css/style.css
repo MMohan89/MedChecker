@@ -1,0 +1,97 @@
+#imgHeading {
+    height: 60px;
+    width: 100px;
+}
+
+#title {
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+}
+
+#mainText {
+    font-family: 'Lobster', cursive;
+    font-size: 70px;
+	color: black;
+}
+
+#navBg {
+    background-color: #EBEBEB;
+    border-top: 1px solid green;
+}
+.cntrVert {
+    position: relative;
+    top: 60%;
+    transform: translateY(-60%);
+}
+#mainSection {
+    background-image: url("../images/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#midDiv {
+    height: 600px;
+}
+
+li {
+    list-style: none;
+}
+
+#iconOne {
+    height: 25px;
+    width: 25px;
+}
+
+#icon2 {
+    height: 30px;
+    width: 30px;
+}
+#icon3 {
+    height: 15px;
+    width: 15px;
+}
+
+.imgSide {
+    height: 200px;
+    width: 300px;
+}
+
+#map {
+    height: 50vh;
+}
+
+#addrInput{
+    width: 300px;
+}
+#cityInput {
+    width: 150px;
+}
+#stateInput {
+    width: 75px;
+}
+
+#mainSection2 {
+    background-image: url("../images/loginBG.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin-top: 0%;
+}
+
+.form-group {
+    font-weight: bold;
+}
+
+ #addMedsInput{
+    width: 300px;
+ }
+#firebaseui-auth-container{
+    height: 100vh;
+}
+.addMedsOuput{
+    background-color: #FFFF00;
+    padding-left: 3px;
+    border-bottom: 1px solid black;
+}
+

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Maps Locator</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+</head>
+
+<body>
+    <div class="containder">
+        <div class="row pr-2">
+            <div class="col-md-4"></div>
+            <div class="col-md-4 text-center mt-2 mb-2">
+                <img src="assets/images/LOGO/LOGO3.png" alt="not found" id='imgHeading' class='mx-2'>
+                <span id='title'>Med-Checkr</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center" id='navBg'>
+                <nav class="d-flex justify-content-center">
+                    <ul class="nav mx-1">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="checker.html">WebCheckerApp</a>
+                        </li>
+                        <li class="nav-item">
+                            <span class="nav-link">|</span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://www.webmd.com" target="_blank">WebMD</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://www.mayoclinic.com" target="_blank">MayoClinic</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://www.healthline.com" target="_blank">Healthline</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="row m-2 mt-4">
+
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="bg-primary rounded">
+                        <img class="card-img-top bg-primary ml-2 my-1" src="assets/images/map.png" alt="Card image cap" id="icon2">
+                        <span class="font-weight-bold text-white">Map Locations</span>
+                    </div>
+                    <div class="card-block p-2" id="resultsMap"></div>
+                </div>
+            </div>
+
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="map"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <form>
+                            <fieldset class="form-group mt-3">
+                                <legend>Search by Address</legend>
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="optionsRadios" id="opt1" value="option1" checked>
+                                   Pharmacies
+                                </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="optionsRadios" id="opt2" value="option2">
+                                   Doctors
+                                </label>
+                                </div>
+                            </fieldset>
+                            <div class="form-group">
+                                <input type="text" class="form-control d-inline mb-1" id="addrInput" aria-describedby="city" placeholder="Address">
+                                <input type="text" class="form-control d-inline" id="cityInput" aria-describedby="city" placeholder="City">
+                                <input type="text" class="form-control d-inline" id="stateInput" aria-describedby="state" placeholder="State">
+                                <div class="form-group row">
+                                    <div class="offset-sm-2 col-sm-10">
+                                        <button type="button" class="btn btn-primary mt-2" id='searchZipBtn'>
+                                    <img class="card-img-top bg-primary mx-1 my-1" src="assets/images/googleSearch.png" alt="no img" id="icon3">
+                                    Search</button>
+                                    <button type="button" class="btn btn-primary mt-2" id='clearMapBtn'>
+                                        <img class="card-img-top bg-primary mx-2 my-1" src="assets/images/redx.png" alt="no img" id="icon3">Clear</button>
+                                    </div>
+                                </div>
+                        </form>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12  ml-3">
+                                <span id='msg' class='text-danger pt-2'></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>  
+        <script src="https://cdn.firebase.com/libs/firebaseui/2.4.0/firebaseui.js"></script>    
+        <script src="assets/script/defiant.js"></script>
+        <script src="assets/script/locator.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcNLiSdt_NSCFphZhktPVZZHUaoMkrs-g&libraries=places&callback=initMap"
+            async defer></script>
+</body>
+
+</html>

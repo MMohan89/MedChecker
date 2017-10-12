@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Meds Checker</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+</head>
+
+<body>
+    <div class="containder">
+        <div class="row pr-2">
+            <div class="col-md-4"></div>
+            <div class="col-md-4 text-center mt-2 mb-2">
+                <img src="assets/images/LOGO/LOGO3.png" alt="not found" id='imgHeading' class='mx-2'>
+                <span id='title'>Med-Checkr</span>
+            </div>    
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center" id='navBg'>
+                <nav class="d-flex justify-content-center">
+                    <ul class="nav mx-1">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="checker.html">WebCheckerApp</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="locator.html">Locator</a>
+                        </li>
+                        <li class="nav-item">
+                            <span class="nav-link">|</span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://www.webmd.com" target="_blank">WebMD</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://www.mayoclinic.com" target="_blank">MayoClinic</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://www.healthline.com" target="_blank">Healthline</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+        <div class="row" id='mainSection'>
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div class='d-flex align-items-center' id='midDiv'>
+                    <ul>
+                        <li><span id='mainText' class=''>" PEACE OF MIND "</span></li>
+                        <li><a class="nav-link active" href="checker.html"><button type="button" class="btn btn-primary">
+                         <img src="assets/images/chk.png" alt="not found" id='iconOne'>Check your MEDs</button></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="rows">
+                    <div class="col-md-12">
+                        <div id="map"></div>
+                    </div>
+                </div>
+                <div class="rows">
+                    <div class="col-md-12"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>  
+    <script src="https://cdn.firebase.com/libs/firebaseui/2.4.0/firebaseui.js"></script>    
+    <script src="assets/script/defiant.js"></script>
+    <script src="assets/script/script.js"></script>
+</body>
+
+</html>
